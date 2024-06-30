@@ -1,0 +1,20 @@
+{{ items }}
+<div class="control">
+  <button (click)="add()">Add Item</button>
+  <button (click)="remove()">Remove Item At 4</button>
+</div>
+
+<div #container class="list">
+  <div
+    *ngFor="let item of items"
+    [class.item1]="item == 3"
+    [class.item2]="item !== 3"
+    [class.animation]="enableTransition"
+    cdkDrag
+    (cdkDragMoved)="dragMoved($event)"
+    (cdkDragStarted)="dragStarted($event)"
+    (cdkDragEnded)="dragEnded($event)"
+  >
+    {{ item }}
+  </div>
+</div>

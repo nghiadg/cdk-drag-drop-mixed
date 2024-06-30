@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item1 {
+  width: 300px;
+  height: 150px;
+  background-color: bisque;
+}
+
+.item2 {
+  width: 150px;
+  height: 150px;
+  background-color: antiquewhite;
+}
+
+.animation {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
